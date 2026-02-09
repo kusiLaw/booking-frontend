@@ -42,7 +42,7 @@ export default function ServiceStep({ selected, onSelect, onNext }: ServiceStepP
                   onClick={() => onSelect(svc)}
                 >
                   {/* Colour dot */}
-                  <div className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ background: svc.color }} />
+                  <div className="w-2.5 h-2.5 rounded-full shrink-0" style={{ background: svc.color }} />
 
                   {/* Info */}
                   <div className="flex-1 min-w-0">

@@ -10,6 +10,7 @@ export default function Hero() {
       gridTemplateColumns: '1fr 1fr',
       position: 'relative',
       overflow: 'hidden',
+      
     }}>
       {/* Left — text */}
       <div style={{
@@ -19,6 +20,8 @@ export default function Hero() {
         padding: '140px 64px 80px',
         background: 'var(--cream)',
         position: 'relative',
+      
+        maxWidth: 1920,
         zIndex: 2,
       }}>
         {/* Label */}
@@ -75,7 +78,9 @@ export default function Hero() {
 
       {/* Right — image placeholder */}
       <div style={{ position: 'relative', background: 'var(--cream-mid)' , minHeight: '36rem'}} className="imgplaceholder">
-        <Image src="/galary1.jpg" alt="Hero image" fill style={{ objectFit: 'cover',  }} />
+        <Image src="/galary1.jpg" alt="Hero image" fill style={{ objectFit: 'cover',  }} 
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" preload
+        />
         {/* Placeholder label */}
         <div style={{
           position: 'absolute', inset: 0,

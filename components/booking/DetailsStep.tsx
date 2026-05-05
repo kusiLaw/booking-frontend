@@ -62,7 +62,7 @@ export default function DetailsStep({ service, date, time, form, onChange, onSub
         </p>
       </div>
 
-      <div className="grid gap-8" style={{ gridTemplateColumns: '1fr 360px', alignItems: 'start' }}>
+      <div className="grid gap-8 detailform" style={{display: 'grid', gridTemplateColumns: '1fr 360px', alignItems: 'start' }}>
 
         {/* ── Form ── */}
         <div className="flex flex-col gap-4">
@@ -256,6 +256,17 @@ export default function DetailsStep({ service, date, time, form, onChange, onSub
        }}>
         By booking you agree to our cancellation policy · 24hrs notice required
       </p>
+       <style>{`
+        @media (max-width: 768px) {
+         
+            .detailform { grid-template-columns: 1fr !important; }
+        }
+        @media (min-width: 769px) {
+          .mobile-only { display: none !important;}
+         
+        }
+      `}</style>
     </div>
+     
   )
 }

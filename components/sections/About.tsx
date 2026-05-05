@@ -18,7 +18,10 @@ export default function About() {
               borderRadius: 'var(--r-sm)',
               position: 'relative',
             }}>
-               <Image src="/about.jpg" alt="About image" fill style={{ objectFit: 'cover',  }} />
+               <Image src="/about.jpg" alt="About image" fill style={{ objectFit: 'cover',  }}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+
+               />
 
               <div style={{
                 position: 'absolute', inset: 0,
@@ -38,7 +41,10 @@ export default function About() {
               border: '4px solid var(--cream-dark)',
               boxShadow: 'var(--sh-lg)',
             }}>
-              <Image src="/hair-details.jpg" alt="About image" fill style={{ objectFit: 'cover',  }} />
+              <Image src="/hair-details.jpg" alt="About image" fill style={{ objectFit: 'cover',  }}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+
+              />
               <div style={{
                 position: 'absolute', inset: 0,
                 display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6,

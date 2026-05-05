@@ -21,7 +21,8 @@ export default function TimeStep({ service, date, slots, selected, loading, onSe
 
   return (
     <div className="py-10" style={{ background: 'var(--cream)', width: '100%', display: 'flex', justifyContent: 'center' }}>
-      <div className="max-w-lg mx-auto" style={{ animation: 'fadeUp 0.5s ease both' , minWidth: '80%', padding: '32px 24px', borderRadius: 12 }}>
+      <div className="max-w-lg mx-auto" style={{ animation: 'fadeUp 0.5s ease both' , 
+         padding: '32px 24px', borderRadius: 12, minWidth: 320, maxWidth: 600, width: '100%', }}>
         {/* Heading */}
         <div className="text-center mb-6">
           <h2

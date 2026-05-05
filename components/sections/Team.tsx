@@ -26,7 +26,9 @@ export default function Team() {
                 marginBottom: 20,
                 overflow: 'hidden',
               }}>
-                <Image src={member.img} alt={member.name} fill style={{ objectFit: 'cover' }} />
+                <Image src={member.img} alt={member.name} fill style={{ objectFit: 'cover' }}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
 
                 <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end', padding: 16 }}>
                   <p className="t-label" style={{ color: 'var(--ink-faint)' }}>Team photo</p>

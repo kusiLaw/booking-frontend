@@ -38,7 +38,8 @@ export default function DateStep({ service, selected, onSelect, onNext, onBack }
 
   return (
     <div className="py-10" style={{ background: 'var(--cream)', width: '100%', display: 'flex', justifyContent: 'center' }}>
-      <div className="max-w- mx-auto " style={{ animation: 'fadeUp 0.5s ease both' ,minWidth: '80%', paddingTop:32, paddingBottom: 32, borderRadius: 12, padding: '32px 24px' }}>
+      <div className="max-w- mx-auto " style={{ animation: 'fadeUp 0.5s ease both', minWidth: 320, maxWidth: 600, width: '100%',
+         paddingTop:32, paddingBottom: 32, borderRadius: 12, padding: '32px 24px' }}>
         {/* Heading */}
         <div className="text-center mb-7 flex flex-col items-center gap-2" style={{ maxWidth: 400, margin: '0 auto',  textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
           <h2
@@ -56,7 +57,8 @@ export default function DateStep({ service, selected, onSelect, onNext, onBack }
         <div
           className="flex items-center gap-2.5 px-4 py-2.5 rounded mb-6"
           style={{ background: 'var(--gold-pale)', border: '1px solid rgba(196,154,60,0.25)',
-            margin:40, display: 'flex', alignItems: 'center', gap: 10, padding: '10px 16px', borderRadius: 8, marginBottom: 24
+            margin:40, display: 'flex', alignItems: 'center', gap: 10, padding: '10px 16px',
+             borderRadius: 8, marginBottom: 24, maxWidth: 320, marginLeft: 'auto', marginRight: 'auto'
            }}
         >
           <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: service.color }} />

@@ -61,7 +61,9 @@ export default function ConfirmedStep({ service, date, time, email, reference, o
     >
       <div
         className="max-w-lg mx-auto text-center relative"
-        style={{ animation: 'scaleIn 0.4s ease both', overflow: 'hidden' }}
+        style={{ animation: 'scaleIn 0.4s ease both', overflow: 'hidden', 
+          display:'flex', flexDirection:'column', 
+         }}
       >
         {/* ── Confetti ── */}
         {confetti.map(p => (
@@ -89,8 +91,8 @@ export default function ConfirmedStep({ service, date, time, email, reference, o
             background: 'var(--ink)',
             boxShadow: '0 8px 32px rgba(24,18,14,0.2)',
             animation: 'scaleIn 0.4s 0.1s ease both',
-             justifySelf: 'center',
-             marginBottom: 24,
+            alignSelf: 'center',
+            marginBottom: 24,
           }}
         >
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -145,6 +147,7 @@ export default function ConfirmedStep({ service, date, time, email, reference, o
             animation: 'fadeUp 0.4s 0.35s ease both',
             marginBottom: 24,
             padding: '6px 12px',
+            alignSelf: 'center',
           }}
         >
           <span
